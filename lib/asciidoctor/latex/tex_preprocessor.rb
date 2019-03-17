@@ -23,7 +23,8 @@ module Asciidoctor::LaTeX
     # TEX_DOLLAR_SUB = '\1\\\(\2\\\)\3'
 
     TEX_DOLLAR_RX = /\$(.*?)\$/
-    TEX_DOLLAR_SUB = 'pass:[\\\(\1\\\)]'
+    #TEX_DOLLAR_SUB = 'pass:[\\\(\1\\\)]'
+    TEX_DOLLAR_SUB = '+++$\1$+++'
 
 
     def process document, reader
